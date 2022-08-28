@@ -21,18 +21,18 @@ public class CreateCoursesDemo {
 		
 		//create some courses
 //		Course tempCourse1 = new Course("AP Computer science");
-		Course tempCourse2 = new Course("Human science");
+		Course tempCourse2 = new Course("AP English");
 		
 		// add courses to instructor
-//		tempInst.add(tempCourse1); 
+		inst.add(tempCourse2); 
 //		tempInst.add(tempCourse2);
 		
 		//save the courses
 //		session.save(tempCourse1);
-//		session.save(tempCourse2);
+		session.save(tempCourse2);
 		
-		Course c = session.get(Course.class, 12);
-		inst.add(c);
+//		Course c = session.get(Course.class, 12);
+//		inst.add(c);
 		
 		
 		session.getTransaction().commit();

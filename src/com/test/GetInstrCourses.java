@@ -13,7 +13,7 @@ public class GetInstrCourses {
 		Session session = HibernateUtil.getSessionFactory().openSession();
 		session.beginTransaction();
 
-		System.out.println("Creating new Course");
+		System.out.println("Getting instructor details / Course");
 		
 		// get the instructor from db
 		int theId = 1;
